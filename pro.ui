@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1019</width>
-    <height>426</height>
+    <height>401</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -49,16 +49,19 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>70</y>
-      <width>321</width>
+      <y>60</y>
+      <width>341</width>
       <height>211</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:none;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>340</x>
       <y>170</y>
       <width>131</width>
       <height>31</height>
@@ -84,7 +87,7 @@
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>340</x>
       <y>200</y>
       <width>81</width>
       <height>20</height>
@@ -104,7 +107,7 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>430</x>
       <y>230</y>
       <width>101</width>
       <height>20</height>
@@ -117,7 +120,7 @@
    <widget class="QLineEdit" name="lineEdit_3">
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>430</x>
       <y>260</y>
       <width>81</width>
       <height>20</height>
@@ -127,8 +130,8 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>50</y>
+      <x>20</x>
+      <y>40</y>
       <width>271</width>
       <height>16</height>
      </rect>
@@ -137,25 +140,38 @@
      <string>Пакеты</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>680</x>
-      <y>300</y>
-      <width>75</width>
-      <height>23</height>
+      <x>660</x>
+      <y>60</y>
+      <width>231</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Остальное</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>300</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Пакет</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_4">
     <property name="geometry">
      <rect>
-      <x>770</x>
-      <y>300</y>
-      <width>111</width>
+      <x>660</x>
+      <y>320</y>
+      <width>81</width>
       <height>20</height>
      </rect>
     </property>
@@ -164,10 +180,13 @@
     <property name="geometry">
      <rect>
       <x>650</x>
-      <y>70</y>
-      <width>321</width>
-      <height>211</height>
+      <y>80</y>
+      <width>361</width>
+      <height>192</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:none;</string>
     </property>
    </widget>
   </widget>

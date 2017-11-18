@@ -153,7 +153,32 @@ void Pro::on_pushButton_clicked()
     return;
     system("pause");
 }
+
+
+
 void Pro::on_pushButton_2_clicked()
 {
+    int t=0;
 
+    QString num =ui->lineEdit_4->text();
+    //qDebug()<<num;
+    int numb=num.toInt()-1;
+    num.clear();
+    QByteArray* temp=pacdata.packets[numb].getdata();
+    num.append(temp->toHex());
+    qint32* temp2=pacdata.packets[numb].getLen();
+    QStandardItem *item;
+    QStandardItemModel *model = new QStandardItemModel(t,16,this);
+    for(int i=0,j=0,y=0;i<*temp2*2;i=i+2,j++)
+    {
+        if(j==16)
+        {
+            j=0;
+            y++;
+        }
+        item = new QStandardItem(QString(num.mid(i,2)));
+        model->setItem(y, j, item);
+
+    }
+    ui->tableView_2->setModel(model);
 }
